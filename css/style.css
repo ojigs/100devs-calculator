@@ -1,0 +1,208 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /*****************************/
+  /* BASE STYLE 
+  /**************************************/
+  body {
+    background-image: url('../img/bgimage.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  h1{
+    text-align: center;
+  }
+  div {
+    margin: auto;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 1px 1px 2px #ccc;
+  }
+  header {
+    position: relative;
+    border-radius: inherit;
+    width: 100%;
+    height: 35%;
+    background-color: #222;
+    color: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  h2 {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    border: 2px solid red;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: right;
+  }
+  form {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    /*border: 2px solid red;*/
+    margin: 0 auto;
+    
+  }
+  input {
+    padding: 10px;
+    text-align: right;
+    width: 220px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    background: white;
+    border: transparent;
+    border-radius: 7px;
+  }
+  input:focus {
+    outline: none;
+  }
+  span {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    /*border: 2px solid red;*/
+    margin: 0 auto;
+    padding: 10px;
+    text-align: right;
+    width: 220px;
+    height: 40px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    background: white;
+    color: black;
+    border: transparent;
+    border-radius: 7px;
+  }
+  main {
+    background-color: white;
+    padding: 15px 30px 10px;
+    height: 65%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  ul{
+  
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  li{
+    text-align: center;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+  }
+  #language {
+    padding-top: 20px;
+    position: relative;
+    justify-content: space-around;
+  }
+  #language li {
+    border-radius: 0;
+    border: none;
+    width: 35px;
+    height: 38px;
+  }
+  #html {
+    background: url('../img/language1.png') 0 0;
+  }
+  #css {
+    background: url('../img/language1.png') -35px 0;
+  }
+  #javascript {
+    background: url('../img/language1.png') -68px 0;
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    color: black;
+  }
+  #clear {
+    background-color: forestgreen;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    
+  }
+  #clear::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: seagreen;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  #clear:active::after {
+    opacity: 1;
+    transition: 0s;
+  }
+  #plus-or-minus {
+    background-color: #ff8800;
+  }
+  #percent {
+    background-color: cadetblue;
+  }
+  #division {
+    background-color: crimson;
+  }
+  #multiply {
+    background-color: indigo;
+  }
+  #subtract {
+    background-color: darkblue;
+  }
+  #add {
+    background-color: sandybrown;
+  }
+  #equals {
+    background-color: #222;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  #backspace {
+    background-color: seagreen;
+    color: white;
+  }
+  #plus-or-minus, #percent, #division, #multiply, #subtract, #add, #equals {
+    color: white;
+    font-size: 18px;
+  }
+  #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #decimal {
+    box-shadow: 0px 6px 4px #ccc;
+  }
