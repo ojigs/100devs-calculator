@@ -43,7 +43,7 @@ function calculate(e) {
         case '+': {
             preVal = currVal;
             inputOutput.value = currVal + '+'
-            currVal = '0'
+            // currVal = '0'
             updateCurrent(e)
             arrayVal.push(preVal, '+'); 
             break;
